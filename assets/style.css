@@ -1,0 +1,37 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+}
+
+.header{
+    display:flex;
+    flex-direction:row;
+    background-color:grey;
+    width:100%;
+    justify-content:space-between;
+    padding:1em;
+}
+
+.header h1{
+    color:black;
+}
+
+.nav{
+    display:flex;
+    
+}
+
+.nav ul{
+    list-style-type:none;
+    display:flex;
+    padding: 5px;
+}
+
+.banner{
+    background-image:url(".assets/image.png");
+}
