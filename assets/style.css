@@ -1,12 +1,18 @@
+:root{
+    --header-size:36px;
+    --font-color:#fff;
+
+}
+
 * {
     margin:0px;
     padding:0px;
     box-sizing: border-box;
 }
 
-/* body{
-
-} */
+body{
+    background-color:lemonchiffon;
+}
 
 
 .header{
@@ -81,6 +87,94 @@
     height:15%;
     margin:75px;
 }
+
+.main{
+    display:flex;
+    flex-wrap:wrap;
+    height:100%;
+    flex-direction: column;
+}
+
+.main-container{
+    background-color:lightcoral;
+    margin:25px;
+    border:5px black solid;
+    height:33%;
+    display:flex;
+    /* width:100%; */
+}
+
+.main-header{
+    width:33%;
+}
+
+.main-body{
+    display:flex;
+    flex-wrap:wrap;
+    width:67%;
+}
+
+.about-me{
+    height:400px;
+}
+
+.work{
+
+}
+
+.contact{
+
+}
+
+.card {
+  flex-grow:1;
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  flex-basis:50%;
+  height:250px;
+}
+
+.card header {
+  padding: 20px;
+  background: #13293d;
+  color: #fff;
+}
+
+.card img {
+  width: 100%;
+  min-width: 400px;
+}
+
+#project1{
+    flex-grow:2;
+    flex-basis:100%;    
+    background-image:url("https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png");
+    height:500px;
+}
+
+#project2{
+    background-image:url("https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png");
+    background-repeat:no-repeat;
+    background-clip: inherit;
+}
+#project3{
+    background-image:url("https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png");
+    background-repeat:no-repeat;
+    background-clip: inherit;
+}
+#project4{
+    background-image:url("https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png");
+    background-repeat:no-repeat;
+    background-clip: inherit;
+}
+#project5{
+    background-image:url("https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png");
+    background-repeat:no-repeat;
+    background-clip: inherit;
+}
+
 
 /* Media query to change site layout to be optimized for mobile devices */
 @media screen and (max-width:800px) {
