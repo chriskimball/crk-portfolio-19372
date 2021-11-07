@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-body{
+/* body{
 
-}
+} */
 
 
 .header{
@@ -15,21 +15,24 @@ body{
     width:100%;
     justify-content:space-between;
     padding:1em;
+    align-items:center;
+    /* can use margin-left instead of justify-content */
+    /* margin-left:auto; */
 }
 
 .header h1{
-    color:black;
+    color:white;
+
 }
 
-.nav{
-    flex-grow:2;
-}
+/* .nav{
+
+} */
 
 .nav ul{
     list-style-type:none;
     display:flex;
-    padding: 5px;
-    margin:10px;
+    padding: 10px;
     justify-content:space-evenly;
     flex-wrap:wrap;
 
@@ -40,9 +43,15 @@ body{
 
 }
 
+    
+.nav a{
+    text-decoration:none;
+    color:white;  
+} 
+
 .name{
     padding:5px;
-    flex-grow:1;
+    
 }
 
 /* banner image */
@@ -71,4 +80,18 @@ body{
     background-color:lightblue;
     height:15%;
     margin:75px;
+}
+
+/* Media query to change site layout to be optimized for mobile devices */
+@media screen and (max-width:800px) {
+
+    .header{
+        flex-direction:column;
+    }
+
+    .nav ul{
+        flex-direction:column;
+        justify-content:space-around;
+    }
+    
 }
