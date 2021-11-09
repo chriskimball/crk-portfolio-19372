@@ -14,14 +14,17 @@ body{
     background-color:lemonchiffon;
 }
 
+p{
+    padding:15px;
+}
 
 .header{
     display:flex;
     background-color:grey;
     width:100%;
     justify-content:space-between;
-    padding:1em;
     align-items:center;
+    padding:15px;
     /* can use margin-left instead of justify-content */
     /* margin-left:auto; */
 }
@@ -70,30 +73,24 @@ body{
     align-items:flex-end;
     background-position: 0 0; 
     flex-wrap:wrap;
-    border-bottom:lightgray
 }
 
-.banner-subtitle{
-    color:azure;
-    padding:25px;
-    justify-content:right;
+.banner-subtitle p{
+    color:rgb(20, 121, 121);
+    padding: 10px;
     background-color:lightblue;
-    height:15%;
     margin:75px;
+    border-radius:25px;
+    text-align:center;
+    height:auto;
+    width:auto;
 }
 
-#about-me{
-    display:flex;
-    justify-content:space-evenly;
-    align-content:flex-end;
-    flex-direction:column;
-    flex-wrap:wrap;
-    padding:15px;
-    flex:1 1 auto;
-}
 
 #profile-image{
-    height: 150px;
+    width:100%;
+    max-width:200px;
+    min-width:50px;
     border-radius: 50%;
     border:3px lightgreen solid;
     object-fit: contain;
@@ -103,20 +100,23 @@ body{
     background-color:lightcoral;
     margin:25px;
     border:5px black solid;
-    height:33%;
     display:flex;
 
 }
 
-#work div{
-    justify-content:space-evenly;
-    align-items:center;
-}
-
 .main-header{
+    display:flex;
+    justify-content:flex-start;
+    align-content:center;
+    flex-direction:column;
+    flex-wrap:wrap;
+    margin:15px;
+    padding:15px;
+    flex:1 1 auto;
+    gap:20px;
+    border-right:10px blue solid;
+    text-align:center;
     width:33%;
-    flex:1 0 auto;
-    text-align:right;
 }
 
 .main-body{
@@ -131,14 +131,12 @@ body{
     flex-wrap:wrap;
     width:67%;
     align-content:flex-start;
+    flex:1 0 auto;
 }
 .main-body-work section{
     height:200px;
     justify-content:center;    
 }
-
-
-
 
 .card {
   flex-grow:1;
@@ -169,25 +167,27 @@ body{
 #project1{
     flex-grow:2;
     flex-basis:100%;    
-    background-image:url("https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png");
+    background-image:url(./images/eclipse.jpg);
     height:400px;
     max-height:500px;
     max-width:100%;
 }
 
 #project2{
-    background-image:url("https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png");
-}
-#project3{
-    background-image:url("https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png");
-}
-#project4{
-    background-image:url("https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png");
-}
-#project5{
-    background-image:url("https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png");
+    background-image:url(./images/dice.jpg);
 }
 
+#project3{
+    background-image:url(./images/calculator.jpg);
+}
+
+#project4{
+    background-image:url(./images/notebuddy.jpg);
+}
+
+#project5{
+    background-image:url(./images/generator.jpg);
+}
 
 #contact ul{
     list-style-type:none;
@@ -203,7 +203,6 @@ body{
 
 }
 
-    
 #contact a{
     text-decoration:none;
     color:white;  
