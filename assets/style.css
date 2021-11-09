@@ -67,7 +67,7 @@ body{
     max-height:450px;
     height:450px;
     display:flex;
-    justify-content:right;
+    justify-content:space-between;
     align-items:flex-end;
     background-position: 0 -50px; 
 }
@@ -82,6 +82,19 @@ body{
     background-color:lightblue;
     height:15%;
     margin:75px;
+}
+
+.profile-image{
+    display:flex;
+    height:100%;
+}
+
+.profile-image img{
+    margin:50px;
+    height:50%;
+    justify-content:flex-start;
+    align-content: flex-start;
+    border-radius: 50%;
 }
 
 .main{
@@ -137,10 +150,10 @@ body{
   max-width:50%;
   width:33%;
   margin:25px;
-  background-size:100%;
+  background-size:cover;
   background-repeat:no-repeat;
   background-clip: inherit;
-
+  background-position: 50% 50%;
 }
 
 .card header {
@@ -158,7 +171,6 @@ body{
     flex-grow:2;
     flex-basis:100%;    
     background-image:url("https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png");
-    background-size: 100%;
     height:400px;
     max-height:500px;
     max-width:100%;
