@@ -97,11 +97,10 @@ p{
 }
 
 .main-container{
-    background-color:lightcoral;
+    background-color:white;
     margin:25px;
     border:5px black solid;
     display:flex;
-
 }
 
 .main-header{
@@ -133,9 +132,10 @@ p{
     align-content:flex-start;
     flex:1 0 auto;
 }
-.main-body-work section{
+.main-body-work a{
     height:200px;
-    justify-content:center;    
+    justify-content:center;
+    text-decoration:none;  
 }
 
 .card {
@@ -151,6 +151,27 @@ p{
   background-repeat:no-repeat;
   background-clip: inherit;
   background-position: 50% 50%;
+  border: 3px red solid;
+  display:flex;
+  flex-direction:row;
+}
+
+.card section{
+    background-color:blue;
+    width:auto;
+    height:60px;
+    flex:0 0 auto;
+    align-self:flex-end;
+    margin-right:auto;
+    opacity:1;
+}
+
+h3{
+    color:white;
+}
+
+.card section p{
+    color:white;
 }
 
 .card header {
@@ -163,6 +184,7 @@ p{
   width: 100%;
   min-width: 400px;
 }
+
 
 #project1{
     flex-grow:2;
@@ -196,6 +218,7 @@ p{
     justify-content:space-evenly;
     flex-wrap:wrap;
     width:100%;
+    align-content: center;
 }
 
 #contact ul li{
