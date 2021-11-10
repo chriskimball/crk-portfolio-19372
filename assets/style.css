@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto&display=swap');
+
 :root{
-    --header-size:36px;
     --main-background:#F5F5F5;
     --header-background:#46494C;
     --main-font:#4C5C68;
@@ -12,10 +13,11 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
-    
+    font-family: 'Roboto', 'Cabin', sans-serif;
 }
 
 body{
+    font-family: 'Roboto', sans-serif;
     background-color:var(--main-background);
 }
 
