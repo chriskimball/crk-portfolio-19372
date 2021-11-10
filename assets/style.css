@@ -34,6 +34,11 @@ h3{
     color:var(--main-header);
 }
 
+footer{
+    text-align:center;
+    padding:15px;
+}
+
 .header{
     display:flex;
     background-color:var(--header-background);
@@ -45,7 +50,6 @@ h3{
 
 .header h1{
     color:var(--main-header);
-
 }
 
 .nav ul{
@@ -54,12 +58,17 @@ h3{
     padding: 10px;
     justify-content:space-evenly;
     flex-wrap:wrap;
-
 }
 
 .nav ul li{
     padding:10px;
+    transition: all .5s ease-in-out;
+}
 
+.nav ul li:hover{
+    background-color:#7E8082;
+    transform: scale(1.5);
+    border-radius:3px;
 }
  
 .nav a{
@@ -71,7 +80,6 @@ h3{
 
 .name{
     padding:5px;
-    
 }
 
 .main{
@@ -106,12 +114,11 @@ h3{
     height:auto;
     width:auto;
     opacity:0;
-    transition: 1.5s;
 }
 
 .banner:hover .banner-subtitle p {
     opacity:1;
-    transition:1.5s;
+    transition:all 1.5s ease-in-out;
 }
 
 
@@ -174,7 +181,7 @@ h3{
   text-align: center;
   max-width:50%;
   width:33%;
-  margin:10px;
+  margin:15px;
   background-size:cover;
   background-repeat:no-repeat;
   background-clip: inherit;
@@ -183,12 +190,14 @@ h3{
   display:flex;
   flex-direction:row;
   opacity:.75;
-  transition:.5s;
+  transition:all .5s ease-in-out;
 }
 
 .project:hover {
     opacity:1;
-    transition: 0.5s;
+    transform: scale(1.1);
+    border-radius:5px;
+    transition:all .5s ease-in-out;
 }
 
 .project-label {
@@ -256,10 +265,17 @@ h3{
     align-content: center;
 }
 
+
+
 #contact ul li{
     padding:10px;
     color:var(--main-font);
+    transition:all .5s ease-in-out;
+}
 
+#contact ul li:hover{
+    transition:all .5s ease-in-out;
+    transform:scale(1.5)
 }
 
 #contact a{
@@ -353,6 +369,16 @@ h3{
     }
     #project1{
         height:200px;
+    }
+
+    .nav ul li:hover{
+        background-color:var(--header-background);
+        transform: scale(1);
+
+    }
+
+    #contact ul li:hover{
+        transform:scale(1)
     }
 
 }
