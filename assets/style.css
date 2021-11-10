@@ -74,6 +74,10 @@ h3{
     
 }
 
+.main{
+    margin-right:10%;
+}
+
 /* banner image */
 .banner{
     background-image:url("/assets/images/background.jpg");
@@ -286,5 +290,5 @@ h3{
         flex-direction:column;
         justify-content:space-around;
     }
-    
+
 }
