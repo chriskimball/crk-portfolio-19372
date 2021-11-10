@@ -152,6 +152,10 @@ h3{
     flex:1 0 auto; 
 }
 
+.main-body{
+    align-items:center;
+}
+
 .main-body-work{
     display:flex;
     flex-wrap:wrap;
@@ -170,7 +174,7 @@ h3{
   text-align: center;
   max-width:50%;
   width:33%;
-  margin:25px;
+  margin:10px;
   background-size:cover;
   background-repeat:no-repeat;
   background-clip: inherit;
@@ -291,7 +295,7 @@ h3{
 
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:678px) {
 
     .main{
         margin-right:0px;
@@ -336,6 +340,7 @@ h3{
 
     .main-body-work{
         width:auto;
+        padding:5px;
     }
 
     aside{
@@ -344,6 +349,10 @@ h3{
     
     .project{
         opacity:1;
+        margin:5px;
+    }
+    #project1{
+        height:200px;
     }
 
 }
