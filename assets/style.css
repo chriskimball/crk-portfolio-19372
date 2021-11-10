@@ -291,7 +291,7 @@ h3{
 
 }
 
-@media screen and (max-width:375) {
+@media screen and (max-width:375px) {
 
     .main{
         margin-right:0px;
@@ -301,18 +301,49 @@ h3{
         flex-direction:column;
     }
 
+    .name{
+        width:100%;
+        text-align:center;
+    }
+
     .nav ul{
-        flex-direction:column;
+        flex-direction:row;
         justify-content:space-around;
+        width:100%;
     }
 
     .banner-subtitle p{
         opacity:1;
+    }
+
+    .main-container{
+        background-color: var(--main-background);
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-header{
+        width: auto;
+        flex-direction:column-reverse;
+        border-right:0px;
+        border-bottom:6px var(--main-border) solid;;
+    }
+
+    .main-body{
+        width:auto;
+    }
+
+    .main-body-work{
+        width:auto;
+    }
+
+    aside{
+        width:100%;
     }
     
     .project{
         opacity:1;
     }
 
-}
 }
