@@ -6,7 +6,7 @@
     --main-font:#4C5C68;
     --main-border:#868689;
     --main-header:#DCDCDD;
-    --work-background:#1985A1;
+    --work-background:#3E616E;
 }
 
 * {
@@ -24,6 +24,14 @@ body{
 p{
     padding:15px;
     color:var(--main-font)
+}
+
+h2 {
+    color:var(--main-font);
+}
+
+h3{
+    color:var(--main-header);
 }
 
 .header{
@@ -83,15 +91,23 @@ p{
     flex-wrap:wrap;
 }
 
+
 .banner-subtitle p{
     color:var(--main-header);
     padding: 10px;
-    background-color:#868689;
+    background-color:var(--work-background);
     margin:75px;
     border-radius:25px;
     text-align:center;
     height:auto;
     width:auto;
+    opacity:0;
+    transition: 1.5s;
+}
+
+.banner:hover .banner-subtitle p {
+    opacity:1;
+    transition:1.5s;
 }
 
 
@@ -145,7 +161,7 @@ p{
     text-decoration:none;  
 }
 
-.card {
+.project {
   flex-grow:1;
   text-align: center;
   max-width:50%;
@@ -158,38 +174,40 @@ p{
   border: 3px var(--main-border) solid;
   display:flex;
   flex-direction:row;
+  opacity:.75;
+  transition:.5s;
 }
 
-.card section{
-    background-color:var(--work-background);
-    width:auto;
-    height:60px;
+.project:hover {
+    opacity:1;
+    transition: 0.5s;
+}
+
+.project-label {
     flex:0 0 auto;
     align-self:flex-end;
     margin-right:auto;
     margin-bottom:5%;
     opacity:1;
+    background-color:var(--work-background);
+    border:3px var(--main-border) solid;
+    border-left:0px;
+    padding:5px;
+    font-size:12px;
 }
 
-h2 {
-    color:var(--main-font);
-}
-
-h3{
+.project div p{
     color:var(--main-header);
+    padding:0px;
 }
 
-.card section p{
-    color:var(--main-header);
-}
-
-.card header {
+.project header {
   padding: 20px;
   background: #13293d;
   color: var(--main-header);
 }
 
-.card img {
+.project img {
   width: 100%;
   min-width: 400px;
 }
@@ -244,15 +262,16 @@ h3{
 
 /* Media query to change site layout to be optimized for mobile devices */
 /* iphone x 375 x 812, ipad 7 */
-@media screen and (max-width:800px) {
+@media screen and (max-width:768px) {
 
-    .header{
-        flex-direction:column;
+    .header h1{
+        align-self:flex-start;
     }
 
     .nav ul{
         flex-direction:column;
         justify-content:space-around;
+        text-align:right;
     }
     
 }
