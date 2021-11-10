@@ -260,13 +260,16 @@ h3{
 
 #contact a{
     text-decoration:none;
-    color:white;  
+    color:var(--main-font);  
 } 
 
-
 /* Media query to change site layout to be optimized for mobile devices */
-/* iphone x 375 x 812, ipad 7 */
+/* iphone X 375px by 812px /// ipad 768px by 1024px */
 @media screen and (max-width:768px) {
+
+    .main{
+        margin-right:0px;
+    }
 
     .header h1{
         align-self:flex-start;
@@ -277,10 +280,22 @@ h3{
         justify-content:space-around;
         text-align:right;
     }
-    
+
+    .banner-subtitle p{
+        opacity:1;
+    }
+
+    .project{
+        opacity:1;
+    }
+
 }
 
 @media screen and (max-width:375) {
+
+    .main{
+        margin-right:0px;
+    }
 
     .header{
         flex-direction:column;
@@ -291,4 +306,13 @@ h3{
         justify-content:space-around;
     }
 
+    .banner-subtitle p{
+        opacity:1;
+    }
+    
+    .project{
+        opacity:1;
+    }
+
+}
 }
