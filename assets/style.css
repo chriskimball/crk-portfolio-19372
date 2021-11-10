@@ -1,36 +1,40 @@
 :root{
     --header-size:36px;
-    --font-color:#fff;
-
+    --main-background:#F5F5F5;
+    --header-background:#46494C;
+    --main-font:#4C5C68;
+    --main-border:#868689;
+    --main-header:#DCDCDD;
+    --work-background:#1985A1;
 }
 
 * {
     margin:0px;
     padding:0px;
     box-sizing: border-box;
+    
 }
 
 body{
-    background-color:lemonchiffon;
+    background-color:var(--main-background);
 }
 
 p{
     padding:15px;
+    color:var(--main-font)
 }
 
 .header{
     display:flex;
-    background-color:grey;
+    background-color:var(--header-background);
     width:100%;
     justify-content:space-between;
     align-items:center;
     padding:15px;
-    /* can use margin-left instead of justify-content */
-    /* margin-left:auto; */
 }
 
 .header h1{
-    color:white;
+    color:var(--main-header);
 
 }
 
@@ -50,7 +54,9 @@ p{
  
 .nav a{
     text-decoration:none;
-    color:white;  
+    color:var(--main-header);
+    border-bottom:4px var(--main-header) solid;
+    padding-bottom:5px;  
 } 
 
 .name{
@@ -76,9 +82,9 @@ p{
 }
 
 .banner-subtitle p{
-    color:rgb(20, 121, 121);
+    color:var(--main-header);
     padding: 10px;
-    background-color:lightblue;
+    background-color:#868689;
     margin:75px;
     border-radius:25px;
     text-align:center;
@@ -92,14 +98,13 @@ p{
     max-width:200px;
     min-width:50px;
     border-radius: 50%;
-    border:3px lightgreen solid;
+    border:3px var(--main-border) solid;
     object-fit: contain;
 }
 
 .main-container{
-    background-color:white;
+    background-color:var(--main-background);
     margin:25px;
-    border:5px black solid;
     display:flex;
 }
 
@@ -113,7 +118,7 @@ p{
     padding:15px;
     flex:1 1 auto;
     gap:20px;
-    border-right:10px blue solid;
+    border-right:6px var(--main-border) solid;
     text-align:center;
     width:33%;
 }
@@ -140,10 +145,7 @@ p{
 
 .card {
   flex-grow:1;
-  padding: 10px;
   text-align: center;
-  border-style: solid;
-  border-width: 1px;
   max-width:50%;
   width:33%;
   margin:25px;
@@ -151,33 +153,38 @@ p{
   background-repeat:no-repeat;
   background-clip: inherit;
   background-position: 50% 50%;
-  border: 3px red solid;
+  border: 3px var(--main-border) solid;
   display:flex;
   flex-direction:row;
 }
 
 .card section{
-    background-color:blue;
+    background-color:var(--work-background);
     width:auto;
     height:60px;
     flex:0 0 auto;
     align-self:flex-end;
     margin-right:auto;
+    margin-bottom:5%;
     opacity:1;
 }
 
+h2 {
+    color:var(--main-font);
+}
+
 h3{
-    color:white;
+    color:var(--main-header);
 }
 
 .card section p{
-    color:white;
+    color:var(--main-header);
 }
 
 .card header {
   padding: 20px;
   background: #13293d;
-  color: #fff;
+  color: var(--main-header);
 }
 
 .card img {
@@ -223,6 +230,7 @@ h3{
 
 #contact ul li{
     padding:10px;
+    color:var(--main-font);
 
 }
 
@@ -233,7 +241,21 @@ h3{
 
 
 /* Media query to change site layout to be optimized for mobile devices */
+/* iphone x 375 x 812, ipad 7 */
 @media screen and (max-width:800px) {
+
+    .header{
+        flex-direction:column;
+    }
+
+    .nav ul{
+        flex-direction:column;
+        justify-content:space-around;
+    }
+    
+}
+
+@media screen and (max-width:375) {
 
     .header{
         flex-direction:column;
