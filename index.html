@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to global css styling reset -->
     <link rel="stylesheet" href="./assets/reset.css">
+    <!-- link to main webpage styling sheet -->
     <link rel="stylesheet" href="./assets/style.css">
+    <!-- webpage title -->
     <title>Portfolio of Chris Kimball</title>
+    <!-- link to webpage favicon -->
     <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
 </head>
 <body>
-    <!-- header -->
+    <!-- header element -->
     <header class="header">
-        <!-- Name -->
         <div class="name">
             <h1>Chris Kimball</h1>
         </div>
-        <!-- nav bar -->
+        <!-- navigation bar elements -->
         <nav class="nav">
             <ul>
                 <li>
@@ -31,25 +34,27 @@
             </ul>
         </nav>
     </header>
-    <!-- banner -->
+    <!-- banner image element -->
     <div class="banner"> 
-        <span role="img" aria-label="snowy lake basin at sunrise surrounded by jagged mountains"> </span>
-
-            <!-- cool subtitle -->
+            <!-- span added to allow screen reader accessibility for project images placed in container as unselectable background images -->
+            <span role="img" aria-label="snowy lake basin at sunrise surrounded by jagged mountains"> </span>
+            <!-- subtitle within banner image -->
             <div class="banner-subtitle">
                 <p>The mountains are calling and I must go.</p>
             </div>
     </div>
     <!-- main content -->
     <main class="main">
-        <!-- about me section -->
+        <!-- about me section heading-->
         <section id="about-me" class="main-container">
             <aside class="main-header">   
                     <h2>
                         About Me
                     </h2>
-                    <img id="profile-image" src="./assets/images/chris.jpg">
+                    <!-- profile image -->
+                    <img id="profile-image" src="./assets/images/chris.jpg" alt="smiling man with short red hair and big red beard">
             </aside>
+            <!-- about me bio -->
             <article class="main-body">
                 <p>
                     Hello! My name is Chris Kimball, I graduated from Washington State University in 2013 with a degree in Management Information Systems. I currently work for Edmentum inc. as a Support Operations Specialist. My role involves implementing and managing client integrations into the Edmentum software using technologies such as, Single Sign on (SSO), Learning Tools Interoperability (LTI), and API. 
@@ -58,13 +63,14 @@
                 </p>
             </article>
         </section>
-        <!-- work section -->
+        <!-- work section heading -->
         <section id="work" class="main-container">
             <aside  class="main-header">
                 <h2>
                     Work
                 </h2>
             </aside>
+            <!-- work section body with project examples -->
             <article class="main-body-work">
                 <a href="https://letmegooglethat.com/?q=solar+eclipse+tracker" id="project1" class="project" target="_blank">
                     <!-- span added to allow screen reader accessibility for project images placed in container as unselectable background images -->
@@ -110,11 +116,13 @@
         </section>
         <!-- contact section -->
         <section class="main-container">
+            <!-- contact section heading -->
             <aside class="main-header">
                 <h2>
                     Contact Me
                 </h2>
             </aside>
+            <!-- contact section body -->
             <article id="contact" class="main-body">
                 <ul>
                     <li>
@@ -133,7 +141,7 @@
             </article>
         </section>
     </main>
-    <!-- footer -->
+    <!-- footer with copyright statement -->
     <footer><h4>© Copyright 2021 Chris Kimball</h4></footer>
 </body>
 </html>
