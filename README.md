@@ -12,12 +12,12 @@ This portfolio is designed to show potential employers the skills and talents of
 This is version 1.0 of Chris' portfolio, currently there are no deployed project examples to provide so placeholder projects have been inserted into the webpage for the time being.
 The portfolio projects will be updated as Chris develops and deploys new projects through the course of his Full Stack Flex Bootcamp.
 
-Upon launching of the webpage users will be presented with navigation bar at the top of the page, with navigational links to three sections of the portfolio, 'About me', 'Work', and 'Contact Me.'
-If the user hovers their cursor over the navigation links, they will pop out to indicating the link they would select if clicked.
+Upon launching the webpage users will be presented with navigation bar at the top of the page, with navigational links to three sections of the portfolio, 'About me', 'Work', and 'Contact Me.'
+If the user hovers their cursor over the navigation links, the links will pop out to indicating the link that would be selected if clicked.
 
-Below the header and navigation bar, the user is presented with a banner image of a mountain landscape (photo captured by Chris Kimball), and will be presented with an inspirational message if their cursor is hovered over the image.
+Below the header and navigation bar, the user is presented with a banner image of a mountain landscape (photo captured by Chris Kimball), and will be presented with a message if their cursor is hovered over the banner image.
 
-The main content area of the webpage contains the three sections with an about me section with a short bio on Chris Kimball and a picture next to it in the heading area. Below the about me section in the work section there are examples of deployed projects. When a user hovers their cursor over a particular project image it will responsively pop out and be highlighted. If the user chooses to click on the image they will be brought to the deployed porject on a live webpage.
+The main content area of the webpage contains the three sections with an about me section with a short bio on Chris Kimball and a picture next to it in the heading area. Below the about me section in the work section there are examples of deployed projects. When a user hovers their cursor over a particular project image it will responsively pop out and be highlighted. If the user chooses to click on the image they will be brought to the deployed project on a live webpage.
 
 Below the work section is the contact me section, which contains contact information to Chris Kimball as well as links to Chris Kimball's Github and Linkedin pages. When a user hovers their cursor over any of the contact me links it will expand the selection to increase visiblity for the selected item.
 
