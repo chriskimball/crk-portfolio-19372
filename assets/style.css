@@ -290,7 +290,7 @@ main{
 /* iphone X resolution 375px by 812px /// ipad 768px by 1024px */
 @media screen and (max-width:768px) {
 
-    .main{
+    main{
         margin-right:0px;
     }
 
@@ -317,7 +317,7 @@ main{
 /* media query adjusts layout to be optimized for screens 678 pixels and lower, including mobile devices */
 @media screen and (max-width:678px) {
 
-    .main{
+    main{
         margin-right:0px;
     }
 
