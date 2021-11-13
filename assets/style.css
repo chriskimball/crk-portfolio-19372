@@ -21,7 +21,6 @@
 
 /* element selector styling */
 body{
-    font-family: 'Roboto', sans-serif;
     background-color:var(--main-background);
 }
 
@@ -53,8 +52,9 @@ header{
     padding:15px;
 }
 
-header h1{
+h1{
     color:var(--main-header);
+    padding:5px;
 }
 
 nav ul{
@@ -82,11 +82,6 @@ nav a{
     border-bottom:4px var(--main-header) solid;
     padding-bottom:5px;  
 } 
-
-.name{
-    padding:5px;
-}
-
 
 /* banner image styling */
 .banner{
@@ -141,12 +136,11 @@ main{
 
 /* main-container flexbox contains the three main sections, About me, Work, Contact */
 .main-container{
-    background-color:var(--main-background);
     margin:25px;
     display:flex;
 }
 
-
+/* main-header class styling the headings for the three main sections */
 .main-header{
     display:flex;
     justify-content:flex-start;
@@ -162,17 +156,16 @@ main{
     width:33%;
 }
 
+/* main-body class styling for the main content for two of the three main sections */
 .main-body{
     display:flex;
     flex-wrap:wrap;
     width:67%;   
     flex:1 0 auto; 
-}
-
-.main-body{
     align-items:center;
 }
 
+/* main-body-work class styling for the work section with project examples */
 .main-body-work{
     display:flex;
     flex-wrap:wrap;
@@ -186,6 +179,7 @@ main{
     text-decoration:none;  
 }
 
+/* project class styling for the example projects in the work section */
 .project {
   flex-grow:1;
   text-align: center;
@@ -239,7 +233,7 @@ main{
   min-width: 400px;
 }
 
-
+/* project id styling, project1 id styling overrides default project class flexbox size to make the project1 example larger than the other projects */
 #project1{
     flex-grow:2;
     flex-basis:100%;    
@@ -265,6 +259,7 @@ main{
     background-image:url(./images/generator.jpg);
 }
 
+/* contact id styling for the unordered list items in contact section */
 #contact ul{
     list-style-type:none;
     display:flex;
@@ -274,8 +269,6 @@ main{
     width:100%;
     align-content: center;
 }
-
-
 
 #contact ul li{
     padding:10px;
@@ -294,14 +287,14 @@ main{
 } 
 
 /* Media query to change site layout to be optimized for mobile devices */
-/* iphone X 375px by 812px /// ipad 768px by 1024px */
+/* iphone X resolution 375px by 812px /// ipad 768px by 1024px */
 @media screen and (max-width:768px) {
 
     .main{
         margin-right:0px;
     }
 
-    header h1{
+    h1{
         align-self:flex-start;
     }
 
@@ -321,6 +314,7 @@ main{
 
 }
 
+/* media query adjusts layout to be optimized for screens 678 pixels and lower, including mobile devices */
 @media screen and (max-width:678px) {
 
     .main{
@@ -331,7 +325,7 @@ main{
         flex-direction:column;
     }
 
-    .name{
+    h1{
         width:100%;
         text-align:center;
     }
@@ -340,6 +334,13 @@ main{
         flex-direction:row;
         justify-content:space-around;
         width:100%;
+    }
+
+    /* hover effect overridden for mobile sized screens since mobile devices do not support hover effects */
+    nav ul li:hover{
+        background-color:var(--header-background);
+        transform: scale(1);
+
     }
 
     .banner-subtitle p{
@@ -378,6 +379,7 @@ main{
         margin:5px;
     }
 
+    /* hover effect overridden for mobile sized screens since mobile devices do not support hover effects */
     .project:hover {
         transform: scale(1);
         border-radius:1px;
@@ -387,14 +389,8 @@ main{
         height:200px;
     }
 
-    nav ul li:hover{
-        background-color:var(--header-background);
-        transform: scale(1);
-
-    }
-
+    /* hover effect overridden for mobile sized screens since mobile devices do not support hover effects */
     #contact ul li:hover{
         transform:scale(1)
     }
-
 }
