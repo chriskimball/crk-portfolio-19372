@@ -207,6 +207,7 @@ main{
 .project-label {
     flex:0 0 auto;
     align-self:flex-end;
+    flex-wrap:wrap;
     margin-right:auto;
     margin-bottom:5%;
     opacity:1;
@@ -237,27 +238,36 @@ main{
 #project1{
     flex-grow:2;
     flex-basis:100%;    
-    background-image:url(./images/eclipse.jpg);
+    background-image:url(./images/project1.png);
     height:400px;
     max-height:500px;
     max-width:100%;
 }
 
 #project2{
-    background-image:url(./images/dice.jpg);
+    background-image:url("https://i.giphy.com/media/xTcnThWTvBZGrgx2dW/giphy.webp");
+}
+
+#project2 .project-label {
+    width:33%;
+}
+
+#project3 .project-label {
+    width:33%;
 }
 
 #project3{
-    background-image:url(./images/calculator.jpg);
+    background-image:url("https://i.giphy.com/media/KDrjub26iceZ2/giphy.webp");
 }
 
-#project4{
+/* Commenting out projcet 4/5 to 
+/* #project4{
     background-image:url(./images/notebuddy.jpg);
 }
 
 #project5{
     background-image:url(./images/generator.jpg);
-}
+} */
 
 /* contact id styling for the unordered list items in contact section */
 #contact ul{
@@ -285,6 +295,20 @@ main{
     text-decoration:none;
     color:var(--main-font);  
 } 
+
+/* Media query to change project label sizing for screen size smaller than 1024px */
+@media screen and (max-width:1024px) {
+
+    
+    #project2 .project-label {
+        width:66%;
+    }
+
+    #project3 .project-label {
+        width:66%;
+    }
+
+}
 
 /* Media query to change site layout to be optimized for mobile devices */
 /* iphone X resolution 375px by 812px /// ipad 768px by 1024px */
