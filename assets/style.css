@@ -218,6 +218,10 @@ main{
     font-size:12px;
 }
 
+.project-label a {
+
+}
+
 .project div p{
     color:var(--main-header);
     padding:0px;
@@ -238,18 +242,18 @@ main{
 #project1{
     flex-grow:2;
     flex-basis:100%;    
-    background-image:url(./images/project1.png);
+    background-image:url(./images/project2.png);
     height:400px;
     max-height:500px;
     max-width:100%;
 }
 
-#project2{
-    background-image:url("https://i.giphy.com/media/xTcnThWTvBZGrgx2dW/giphy.webp");
-}
-
 #project2 .project-label {
     width:33%;
+}
+
+#project2{
+    background-image:url(./images/project1.png);
 }
 
 #project3 .project-label {
@@ -257,17 +261,26 @@ main{
 }
 
 #project3{
-    background-image:url("https://i.giphy.com/media/KDrjub26iceZ2/giphy.webp");
+    background-image:url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80");
 }
 
-/* Commenting out projcet 4/5 to 
-/* #project4{
-    background-image:url(./images/notebuddy.jpg);
+#project4 .project-label {
+    width:33%;
+}
+
+#project4{
+    background-image:url("https://i.giphy.com/media/xTcnThWTvBZGrgx2dW/giphy.webp");
+}
+
+#project5 .project-label {
+    width:33%;
 }
 
 #project5{
-    background-image:url(./images/generator.jpg);
-} */
+    background-image:url("https://i.giphy.com/media/KDrjub26iceZ2/giphy.webp");
+}
+
+
 
 /* contact id styling for the unordered list items in contact section */
 #contact ul{
